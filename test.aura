@@ -1,0 +1,29 @@
+start(){
+    img = \Aurora.png
+    color = Aurora.color.new(5, 0, 30)
+    screen = Aurora.display.new("test application", 800, 600, img, true)
+
+    logoX = -400
+}
+
+update(){
+    screen.init()
+
+    screen.fillRect(0, 0, screen.width, screen.height, color)
+
+    screen.drawImage(img, logoX, 80, 400, 400)
+
+    move()
+
+    screen.render()
+}
+
+move(){
+    if logoX < screen.width[
+        logoX + 1
+    ]
+
+    if logoX > screen.width[
+        logoX = -400
+    ]
+}
